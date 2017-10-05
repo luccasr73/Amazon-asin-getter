@@ -3,20 +3,35 @@
   <head>
   <style>
   body{
-  width:200px;
+  width:250px;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size:0.9rem;
 }
-button{
-border-radius:10px;
-width:100%;
+button {
+    background-color: #555555; /* Green */
+    color: #fff;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width:100%;
+    cursor:pointer;
+    border-radius: 4px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border: 2px solid  #555555
+}
+button:hover {
+    background-color: #fff; /* Green */
+    color: #000;
+    border: 2px solid  #555555;
 }
   </style>
   </head>
     <body>
-    <p>Made a search on amazon's site and click on "get ASIN" button to get Asin numbers of a page and download this</p>
-    <button id="getAsin">get ASIN</button>
-    <script type="text/javascript" src="asin.js"></script>
+    <p>Made a search on amazon's site and click on "Get ASIN" button to get Asin numbers of a page separated with commas.</p>
+    <button id="getAsin">Get ASIN</button>
+    <script type="text/javascript" src="popup.js"></script>
   </body>
 </html>
 

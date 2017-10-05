@@ -1,9 +1,9 @@
 // var app = chrome.runtime.getBackgroundPage();
-function hello() {
+function execute() {
   chrome.tabs.executeScript({
     file: 'asin.js'
   }); 
 }
-document.getElementById('getAsin').addEventListener('click', hello);
+document.getElementById('getAsin').addEventListener('click', execute);
 
 
